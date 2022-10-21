@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Playball&family=Rubik+Burned&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap'); */
+
+
+
+
+
+* {
+    font-family: 'Nunito', sans-serif;
+    /* font-family: 'Poppins', sans-serif; */
+    /* font-family: 'Raleway', sans-serif; */
+    /* font-family: 'Ubuntu', sans-serif; */
+    /* font-family: 'PT Sans', sans-serif; */
+    color: black;
+    cursor: context-menu;
+    user-select: none;
+}
+
+html {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+}
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* ------------------------------------------------------------ */
+
+section.messages {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+table {
+    /* box-shadow: inset 0px 0px 11px 0px #d8d8d8 ; */
+    padding: 20px;
+    margin: 20px;
+    border-collapse: collapse;
+    min-width: 1000;
+    width: auto;
+    box-shadow: 1px -1px 103px -64px rgba(0,0,0,0.84);
+}
+
+td, th {
+    text-align: center;
+    word-wrap: break-word;
+    font-size: 13px;
+}
+
+td {
+    padding: 10px;
+    
+}
+
+td.message {
+    max-width: 400px;
+    /* text-align: justify; */
+    padding: 10px 25px;
+    line-height: 15px;
+}
+
+td.id {
+    font-weight: 900;
+}
+td.email{
+    user-select: text;
+    cursor: text;
+}
+
+th{
+    padding: 10px 25px;
+    background-color: #dddddd;
+}
+
+a {
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    margin: 20px;
+    border-radius: 5px;
+    width: 100px;
+    height: 20px;
+    transition: .4s;
+    font-weight: 900;
+    border: 1px solid transparent;
+}
+
+a:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border: 1px solid black;
+}
+
+tbody, tr, td ,th{
+    border: 1px solid  #dddddd;
+}
+
+tbody tr:nth-child(even){
+    background-color: #f3f3f3;
+}

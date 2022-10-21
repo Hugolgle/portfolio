@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon portfolio</title>
+    <link rel="shortcut icon" href="images/icone.png">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/loading.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<!---------------------- PAGE DE CHARGEMENT ---------------------->
+
+
+    <?php include ("loader.php");?>   
+
+                     
+
+<!---------------------- PREMIERE PARTIE - LE MENU ---------------------->
+    <main id="accueil">
+        <section class="accueil" id="accueil">
+            <header class="header" id="header">
+                <nav class="nav-logo">
+                    <a href="#accueil" class="logo"><img src="./images/logo.png" alt="nav icon"></a>
+                </nav>
+
+                <div class="main-navlinks">
+                    <button class="hamburger" type="button" aria-label="Toggle navigation" aria-expanded="false">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <nav class="nav-menu">
+                        <li><a href="#accueil">Accueil</a></li>
+                        <li><a href="#apropos">A propos de moi</a></li>
+                        <li><a href="#parcours">Parcours</a></li>
+                        <li><a href="#skills">Compétences</a></li>
+                        <li><a href="#xppro">Expériences professionnelles</a></li>
+                        <li><a href="#projets">Projets</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </nav>
+                </div>
+
+
+
+
+
+            </header>
+            <div class="containeraccueil">
+                <div class="contenuaccueil">
+                    <div class="photop reveal-1">
+
+                    </div>
+                    <h1 class="reveal-3">Bonjour ! Je m'appelle Hugo.</h1>
+                    <h2 class="reveal-3">Je suis <span></span>.</h2>
+                    <i class="fa-solid fa-up-down slide reveal-5"></i>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+<!---------------------- DEUXIEME PARTIE - LE CONTENU ---------------------->
+    <main>
+
+<!------------------------------------------------------ PROFIL ------------------------------------------------------>
+        <section class="section apropos" id="apropos">
+            <h1 class="titresection reveal-1">A propos de moi</h1>
+            <div class="apropos reveal-1">
+                <div class="portrait reveal-1">
+                    
+                </div>
+                <div class="txtapropos">
+                    <p class="reveal-2">Je m’appelle Hugo LG, je suis âgé de 20 ans. J'ai fais un BTS SIO (Service Informatique aux Organisations). Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste doloremque atque laboriosam. Dolor expedita laborum officia iusto. Nobis ad, minus consectetur id, maxime sit, corporis obcaecati illum quos consequatur officia? Quisquam hic corrupti fugiat corporis fuga laboriosam voluptas quas eum, labore reprehenderit! Hic autem perspiciatis ipsam doloribus ipsum illum aut?</p>
+                    <div class="iconeloisir">
+                        <i class="fa-solid fa-futbol reveal-1"></i>
+                        <i class="fa-solid fa-dumbbell reveal-2"></i>
+                        <i class="fa-solid fa-person-running reveal-3"></i>
+                        <i class="fa-sharp fa-solid fa-person-biking reveal-4"></i>                 
+                    </div>
+                </div>
+            </div>
+
+        </section>
+<!------------------------------------------------------ FORMATION ------------------------------------------------------>
+        <section class="section parcours" id="parcours">
+            <h1 class="titresection reveal-1">Mon parcours</h1>
+            
+                <div class="parcours">
+                    <div class="ligne"></div>
+
+                        <div class="rond r1" data-anim="1"></div>
+                        <div class="rond r2" data-anim="2"></div>
+                        <div class="rond r3" data-anim="3"></div>
+                        <div class="rond r4" data-anim="4"></div>
+
+                            <div class="containerbox">
+                                <div class="box b1 reveal-1" data-anim="1">
+                                    <h2>2022 - 2023</h2>
+                                    <p>
+                                        Année de e-Learning via tutoriel YouTube.
+                                    </p>
+                                </div>
+                                <div class="box b2 reveal-1" data-anim="2">
+                                    <h2>2020 - 2022</h2>
+                                    <p>
+                                        BTS SIO (Service Informatique aux organisations) au Lycée Victor & Hélène BASCH à RENNES.
+                                    </p>
+
+                                </div>
+                                <div class="box b3 reveal-1" data-anim="3">
+                                    <h2>2017 - 2020</h2>
+                                    <p>
+                                        BAC PRO MEI (Maintenance des Equipements Industriels) au Lycée Saint Joseph La salle à LORIENT.
+                                    </p>
+
+                                </div>
+                                <div class="box b4 reveal-1" data-anim="4">
+                                    <h2>2013 - 2017</h2>
+                                    <p>
+                                        Collège Saint Félix Kerlois à HENNEBONT.
+                                    </p>
+
+                                </div>
+                            </div>
+                                
+                </div>
+    
+        </section>
+<!------------------------------------------------------ COMPETENCES ------------------------------------------------------>
+        <section class="section skills" id="skills">
+            <h1 class="titresection reveal-1">Mes compétences</h1>         
+
+
+            <div class="skills">
+
+                <div class="boxskills reveal-1">
+                    <h1>Langages</h1>
+                    
+                        <h4>HTML5/CSS3</h4><div class="progressbar">
+                            <div class="bar" data-width="64"></div>
+                        </div>
+                        <h4>JS</h4><div class="progressbar">
+                            <div class="bar" data-width="24"></div>
+                        </div>
+                        <h4>PHP</h4><div class="progressbar">
+                            <div class="bar" data-width="26"></div>
+                        </div>
+                        <h4>SQL</h4><div class="progressbar">
+                            <div class="bar" data-width="36"></div>
+                        </div> 
+                        <h4>Python</h4><div class="progressbar">
+                            <div class="bar" data-width="45"></div>
+                        </div>
+                        <h4>Java</h4><div class="progressbar">
+                            <div class="bar" data-width="18"></div>
+                        </div>
+                        <h4>C#</h4><div class="progressbar">
+                            <div class="bar" data-width="15"></div>
+                        </div>
+                </div>
+
+
+
+                
+
+                <div class="boxskills reveal-2">
+                    <h1>Technologies</h1>
+                    <div class="contenu">
+                        <h4>Objet</h4>
+                            <p>Python, C#, Java</p>
+                        <h4>Web</h4>
+                            <p>HTML5, CSS3, JS, PHP, Wordpress, SQL, API REST</p>
+                        <h4>Librairie, Framework</h4>
+                            <p>JS : VueJS , Jquery<br>CSS : Bootstrap<br>PHP : CodeIgniter</p>
+                    </div>
+                </div>
+
+                <div class="boxskills reveal-3">
+                    <h1>Outils</h1>
+                    <div class="contenu">
+                        <h4>Développement</h4>
+                            <p>Visual Studio Code</p>
+                        <h4>Projet</h4>
+                            <p>Gitlab, GitHub, Git, Gantt</p>
+                        <h4>Gestion de patrimoine</h4>
+                            <p>GLPI</p>
+                    </div>
+                </div>
+
+                <div class="boxskills reveal-4">
+                    <h1>Conception</h1>
+                    <div class="contenu">
+                        <h4>OS</h4>
+                            <p>Windows, Linux</p>
+                        <h4>Administratif</h4>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="containercv reveal-1">
+                <a href="./images/cv.pdf" target="_blank"><button type="submit">Voir mon CV</button></a>
+            </div>
+
+    </section>
+
+<!------------------------------------------------------ Expériences professionnelles ------------------------------------------------------>
+
+    <section class="section xppro" id="xppro">
+        <h1 class="titresection reveal-1">Expériences professionnelles</h1>
+        <div class="experiencepro">
+            <div class="boxstage reveal-1">
+                <div>
+                    <p>Stage - 2021</p>
+                    <h1>La Mairie de Saint-Avé</h1>
+                    <h5><strong>Mission :</strong> Migrer un site web sous WordPress.</h5>
+                </div>
+                <a href="https://drive.google.com/drive/folders/1dGFiFvLRbdOxly2apRyDULak7epSkQVP?usp=sharing" target="_blank"><button type="submit">En savoir plus</button></a>
+            </div>
+            <div class="boxstage reveal-2">
+                <div>
+                    <p>Stage - 2022</p>
+                    <h1>La Maison des Chaudoudoux</h1>
+                    <h5><strong>Mission :</strong> Améliorer et corriger l'application interne de l'association.</h5>
+                </div>
+                <a href="https://drive.google.com/drive/folders/1Qurtzl2X49IhAU40cRe89924CZkU0L9A?usp=sharing" target="_blank"><button type="submit">En savoir plus</button></a>
+            </div>
+        </div>
+
+    </section>
+<!------------------------------------------------------ Projets ------------------------------------------------------>
+
+
+
+    <section class="section projets" id="projets">
+
+        <h1 class="titresection reveal-1">Mes projets</h1>                
+        <div class="tritag">
+            <button class="tout">Tout</button>
+            <button class="taghtml">HTML</button>
+            <button class="tagcss">CSS</button>
+            <button class="tagjs">JS</button>
+            <button class="tagphp">PHP</button>
+        </div>
+        <div class="projet">
+
+                
+            <div id="projet1" class="containerprojet reveal-1">
+
+                <div class="card projet1">
+                    <div class="img">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="content">
+                        <h3>Projet n°1</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, asperiores.</p>
+
+                        <button class="modal-btn modal-trigger"><i class="fa-solid fa-plus plus"></i></button>
+
+
+                    </div>
+                </div>
+                <div class="titre">
+                    <h2>Projet 1</h2>
+                    <div class="tag">
+                        <span class="html">HTML</span><span class="js">JS</span><span class="css">CSS</span><span class="php">PHP</span>
+                    </div>
+                </div>  
+            </div>
+
+            <div id="projet2" class="containerprojet reveal-2">
+                <div class="card projet2">
+                    <div class="img">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="content">
+                        <h3>Projet n°2</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi, labore?</p>
+                        <button class="modal-btn modal-trigger2"><i class="fa-solid fa-plus plus"></i></button>
+                    </div>
+                </div>   
+                <div class="titre">
+                    <h2>Projet 2</h2>
+                    <div class="tag">
+                        <span class="html">HTML</span><span class="js">JS</span><span class="css">CSS</span><span class="php">PHP</span>
+                    </div>
+                </div>      
+            </div>
+                
+            <div id="projet3" class="containerprojet reveal-3">
+                <div class="card projet3">
+                    <div class="img">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="content">
+                        <h3>Projet n°3</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, sapiente.</p>
+                        <button class="modal-btn modal-trigger3"><i class="fa-solid fa-plus plus"></i></button>
+                    </div>
+                </div>   
+                <div class="titre">
+                    <h2>Projet 3</h2>
+                    <div class="tag">
+                        <span class="html">HTML</span><span class="js">JS</span><span class="css">CSS</span><span class="php">PHP</span>
+                    </div>
+                    
+                </div>        
+            </div>
+
+            <div id="projet4" class="containerprojet reveal-1">
+                <div class="card projet4">
+                    <div class="img">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="content">
+                        <h3>Projet n°4</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus, quae.</p>
+                        <button class="modal-btn modal-trigger4"><i class="fa-solid fa-plus plus"></i></button>
+                    </div>
+                </div>   
+                <div class="titre">
+                    <h2>Projet 4</h2>
+                    <div class="tag">
+                        <span class="html">HTML</span><span class="js">JS</span><span class="css">CSS</span><span class="php">PHP</span>
+                    </div>
+                </div>               
+            </div>
+
+            <div id="projet5" class="containerprojet reveal-2">
+                <div class="card projet5">
+                    <div class="img">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="content">
+                        <h3>Projet n°5</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis, assumenda.</p>
+                        <button class="modal-btn modal-trigger5"><i class="fa-solid fa-plus plus"></i></button>
+                    </div>
+                </div>   
+                <div class="titre">
+                    <h2>Projet 5</h2>
+                    <div class="tag">
+                        <span class="html">HTML</span><span class="js">JS</span><span class="css">CSS</span><span class="php">PHP</span>
+                    </div>
+                </div>  
+            </div>
+
+            <div id="projet6" class="containerprojet reveal-3">
+                <div class="card projet6">
+                    <div class="img">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="content">
+                        <h3>Projet n°6</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, laboriosam.</p>
+                        <button class="modal-btn modal-trigger6"><i class="fa-solid fa-plus plus"></i></button>
+                    </div>
+                </div>
+                <div class="titre">
+                    <h2>Projet 6</h2>
+                    <div class="tag">
+                        <span class="html">HTML</span><span class="js">JS</span><span class="css">CSS</span><span class="php">PHP</span>
+                    </div>
+                </div> 
+            </div>
+   
+        </div>
+
+    </section>
+
+
+
+<!------------------------------------------------------ CONTACT ------------------------------------------------------>
+    <section class="section contact" id="contact">
+        <h1 class="titresection reveal-1">Contactez-moi !</h1>
+        <div class="contact reveal-1">
+            <div class="containercarres">
+                <div class="carre">
+                    <a href="https://goo.gl/maps/BqiocGLJUpzgK6oq7" target="_blank">
+                        <p><i class="fa-sharp fa-solid fa-location-dot"></i></p>
+                        <p>56<br>MORBIHAN</p>
+                    </a>
+                </div>
+                <div class="carre">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d665526.4385208865!2d-3.2535706177047827!3d47.88045745614973!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x481022b4db31c689%3A0x30ca5cd36df2900!2sMorbihan!5e0!3m2!1sfr!2sfr!4v1664443085344!5m2!1sfr!2sfr" width="170" height="170" style="border:0; border-radius: 10px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="carre">
+                    <a href="tel:0783059744">
+                        <p><i class="fa-solid fa-phone"></i></p>
+                        <p>07 83 05 97 44</p>
+                    </a>
+                </div>
+                <div class="carre">
+                    <a href="mailto:hugo56.lg@gmail.com" target="_blank">
+                        <p><i class="fa-solid fa-envelope"></i></p>
+                        <p>hugo56.lg@gmail.com</p>
+                    </a>
+                </div>
+            </div>  
+                        
+            <div class="containerform" id="idform">
+                <form class="leformulairecontact" method="post" action="contr_form_contact.php">
+                    <input type="text" name="nom" id="nom" placeholder="Nom" required>
+                    <input type="text" name="prenom" id="prenom" placeholder="Prénom" required>
+                    <input type="email" name="email" id="email" placeholder="E-mail" required>
+                    <input type="text" name="tel" id="tel" placeholder="Téléphone" required>
+                    <textarea name="message" placeholder="Message" required></textarea>
+                    <button type="submit" name="envoyer" class="envoyer">Envoyer</button>
+                    <div class="messageetatcontact">
+                    <?php 
+                    if(isset($_GET['reg_err'])){                       
+                        $err = htmlspecialchars($_GET['reg_err']);
+                        switch($err)
+                        {
+                            case 'success':
+                            ?>
+                                <div class="success">                                        
+                                        Envoie réussie ! 
+                                    <div class="close"><a href="index.php">OK !</a></div>
+                                </div>
+                            <?php
+                            break;
+
+                            case 'failed':
+                            ?>
+                                <div class="failed">                                       
+                                        Envoie échoué !                         
+                                    <div class="close"><button>OK !</button></div>
+                                </div>
+                            <?php 
+                        }
+                    }
+                    ?>  
+                    </div>               
+                </form>
+            </div>                
+        </div>                 
+    </section>
+</main>
+
+<main>
+    <footer>
+        <section class="footer">
+            <div class="socialmedia">
+                <!-- <a href="http://www.google.com/" target="_blank" rel="noopener noreferrer" class="reveal-1"><i class="fa-brands fa-facebook"></i></a> -->
+                <!-- <a href="http://www.google.com/" target="_blank" rel="noopener noreferrer" class="reveal-2"><i class="fa-brands fa-instagram"></i></a> -->
+                <a href="https://gitlab.com/hugo566" target="_blank" rel="noopener noreferrer" class="reveal-1"><i class="fa-brands fa-gitlab"></i></a>
+                <!-- <a href="http://www.google.com/" target="_blank" rel="noopener noreferrer" class="reveal-4"><i class="fa-brands fa-twitter"></i></a> -->
+                <a href="https://www.linkedin.com/in/hugo-le-galle-01b398203/" target="_blank" rel="noopener noreferrer" class="reveal-2"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+
+        
+            <p><i class="fa-regular fa-copyright"></i> 2022 Hugo LG, Tous droits réservés.</p>       
+        </section>
+    </footer>
+</main>
+
+<!---------------------- LES OBJETS - LE FONCTIONNEL ---------------------->
+
+    <a href="#accueil">
+        <p>
+            <i class="fa-solid fa-circle-chevron-up remonte"></i>
+        </p>
+    </a>
+
+<?php include ("modal.php");?>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/debug.addIndicators.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+
+
+<script src="./js/js.js"></script>
+
+
+</body>
+</html>
