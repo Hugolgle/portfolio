@@ -1329,6 +1329,19 @@ i.remonte:hover {
         font-size: 10px;
         margin: 5px 0;
     }
+
+    div.card:hover div.img > span {
+        transform: translateY(0%);
+    }
+    div.card:hover div.content {
+        transform: translateY(0);
+        transition: 0s;
+        transition-delay: 0s;
+    }
+
+    div.content {
+        display: none;
+    }
    
     div.imgportfolio{
         background-image: url(../images/images_projet/captureportfolio.png);
