@@ -741,7 +741,6 @@ button.close-modal{
     top: 10px;
     right: 10px;
     background: none;
-    
 }
 
 button.close-modal i{
@@ -1192,6 +1191,14 @@ i.remonte:hover {
 
 
 @media screen and (max-width: 900px) {
+    * {
+        font-family: 'Nunito', sans-serif;
+        /* font-family: 'Poppins', sans-serif; */
+        /* font-family: 'Raleway', sans-serif; */
+        /* font-family: 'Ubuntu', sans-serif; */
+        /* font-family: 'PT Sans', sans-serif; */
+        
+    }
     div.loader{
         display: flex;
         flex-direction: column;
@@ -1359,6 +1366,14 @@ i.remonte:hover {
   }
 
   @media screen and (max-width: 666px) {
+    * {
+        font-family: 'Nunito', sans-serif;
+        /* font-family: 'Poppins', sans-serif; */
+        /* font-family: 'Raleway', sans-serif; */
+        /* font-family: 'Ubuntu', sans-serif; */
+        /* font-family: 'PT Sans', sans-serif; */
+        
+    }
     section.section {
         overflow: hidden;
         width: 100%;
@@ -1514,6 +1529,14 @@ i.remonte:hover {
 
 
 @media screen and (min-width: 666px) and (max-width: 900px) {
+    * {
+        font-family: 'Nunito', sans-serif;
+        /* font-family: 'Poppins', sans-serif; */
+        /* font-family: 'Raleway', sans-serif; */
+        /* font-family: 'Ubuntu', sans-serif; */
+        /* font-family: 'PT Sans', sans-serif; */
+        
+    }
     section.section {
         overflow: hidden;
         width: 100%;
