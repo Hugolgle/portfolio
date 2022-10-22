@@ -718,7 +718,8 @@ div.modal {
     position: absolute;
     top: 55%;
     left: 50%;
-    transform: scale(0.5);
+    transform: translate(-50%, calc(-50% - 50px));
+    transition: opacity .4s ease-out, transform .4s ease-out;
 }
 
 div.modal-container.active .modal,
@@ -729,6 +730,7 @@ div.modal-container5.active5 .modal,
 div.modal-container6.active6 .modal {
     opacity: 1;
     transform: translate(-50%, -50%);
+    transition: opacity .4s .2s ease-out, transform .4s .2s ease-out;
 }
 
 button.close-modal{
