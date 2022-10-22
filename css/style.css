@@ -1269,6 +1269,7 @@ i.remonte:hover {
       padding: 15px 0 10px 2px;
       border-right: 1px solid #c5c5c6;
       transform: translate(-100%);
+      border-radius: 0 15px 0 0;
     }
     .open {
       transform: translate(0%);
@@ -1362,9 +1363,9 @@ i.remonte:hover {
         padding: 0 0 20px 0;
     }
     section.accueil{
-        background-image: url(../images/1.jpg);
+        background-image: url(../images/1_resp.jpg);
         background-size: cover;
-        height: 30vh;
+        height: 100vh;
     }
     section.parcours{
         height: 140vh;
@@ -1379,20 +1380,22 @@ i.remonte:hover {
     }
 
     div.containeraccueil {
-        height: 30vh;
+        height: 100vh;
+        width: 100%;
     }
     
     div.contenuaccueil h1{
-        font-size: 12px;
+        font-size: 25px;
+        margin: 0;
     }
     div.contenuaccueil h2{
-        font-size: 10px;
+        font-size: 20px;
     }
     i.slide {
         border: solid 1.5px black;
         border-radius: 50px;
-        padding: 7.5px 2.5px 7.5px 2.5px;
-        font-size: 7.5px;
+        padding: 10px 2.5px 7.5px 2.5px;
+        font-size: 10px;
         margin-top: 0;
         transform: translateY(12.5px);
         animation: 6s translate infinite;
