@@ -1339,7 +1339,7 @@ i.remonte:hover {
         font-weight: 900;
         font-size: 15px;
         padding: 5px 20px;
-        box-shadow: 0px 0px 12px 0px rgb(0 0 0 / 75%);
+        box-shadow: 0px 0px 12px 0px rgb(0, 0, 0);
         cursor: pointer;
         margin: 5px 0;
     }
