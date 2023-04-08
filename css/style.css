@@ -29,7 +29,7 @@ html {
 body {
     margin: 0;
     padding: 0;
-
+    font-size: 62.5%;
 }
 
 a {
@@ -84,6 +84,7 @@ nav.nav-menu a {
     transition: .4s;
     font-weight: 800;
     cursor: pointer;
+    font-size: 1.5em;
 }
 
 nav.nav-menu a::after {
@@ -155,7 +156,7 @@ div.contenuaccueil {
 }
 
 div.contenuaccueil h1 {
-    font-size: 45px;
+    font-size: 4.5em;
     text-align: center;
 }
 
@@ -184,7 +185,7 @@ i.slide {
     border: solid 2.5px black;
     border-radius: 50px;
     padding: 15px 5px 15px 5px;
-    font-size: 15px;
+    font-size: 1.5em;
     margin-top: 30px;
     transform: translateY(25px);
     animation: 6s translate infinite;
@@ -215,6 +216,7 @@ section.section {
 
 section h1.titresection {
     padding: 40px 0 5px 0;
+    font-size: 2.5em;
 }
 
 section h1.titresection::before {
@@ -253,42 +255,20 @@ div.portrait {
 }
 
 div.txtapropos {
-    padding: 0 20px;
-    width: 510px;
-    height: 300px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
+    padding: 25px;
+    width: 477px;
+    height: 155px;
     margin-left: 60px;
+    display: flex;
+    align-items: center;
     background-color: #ffffff;
     border-radius: 10px;
 }
 
-div.txtapropos {
+div.txtapropos p {
     text-align: justify;
-}
-
-div.iconeloisir {
-    width: 100%;
-    height: 100px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-div.iconeloisir i {
-    font-size: 30px;
-    transform: rotate(0);
-    animation: 2s cubic-bezier(.57, -0.41, .41, 1.42) rotation infinite;
-}
-
-@keyframes rotation {
-    100% {
-        transform: rotate(-360deg);
-    }
-
+    font-size: 1.5em;
+    margin: 0;
 }
 
 /*----------------------- PARCOURS ------------------------*/
@@ -395,13 +375,13 @@ div.b4 {
 }
 
 div.box h2 {
-    font-size: 22px;
+    font-size: 2.2em;
     margin: 5px;
     font-weight: 900;
 }
 
 div.box p {
-    font-size: 18px;
+    font-size: 1.8em;
 }
 
 /*----------------------- SKILLS ------------------------*/
@@ -433,13 +413,13 @@ div.boxskills {
 }
 
 div.boxskills h4 {
-    font-size: 18px;
+    font-size: 1.8em;
     margin: 0;
 }
 
 div.boxskills p {
     margin: 0 0 10px 0;
-    font-size: 15px;
+    font-size: 1.5em;
 }
 
 div.progressbar {
@@ -503,7 +483,7 @@ div.boxstage {
     flex-direction: column;
     justify-content: space-around;
     width: 350px;
-    height: 300px;
+    height: 250px;
     background-color: #dddddd;
     border-radius: 10px;
     margin: 10px 20px;
@@ -654,7 +634,7 @@ div.content p {
 }
 
 div.content p {
-    font-size: 13px;
+    font-size: 1.3em;
 }
 
 div.content i {
@@ -668,6 +648,8 @@ div.content i:hover {
 }
 
 /* ------------------------------------------------------------------------------------------------------ */
+
+
 button.modal-btn {
     background: none;
     border: none;
@@ -740,7 +722,7 @@ div.modal-container11.active11 .overlay {
 
 div.modal {
     opacity: 0;
-    width: 40%;
+    width: 80%;
     height: 70%;
     padding: 30px;
     background: #ffffff;
@@ -771,7 +753,7 @@ div.modal-container11.active11 .modal {
 button.close-modal {
     padding: 8px;
     border: none;
-    font-size: 25px;
+    font-size: 2.5em;
     position: absolute;
     top: 10px;
     right: 10px;
@@ -799,6 +781,7 @@ div.contenumodal {
 div.contenumodal p {
     padding: 20px;
     text-align: justify;
+    font-size: 1.5em;
 }
 
 div.contenumodal a {
@@ -861,14 +844,14 @@ div.titre {
     justify-content: space-evenly;
 }
 
-div.titre h4 {
+div.titre h2 {
     margin: 0;
     padding: 0;
 }
 
 div.tag span {
     padding: 0 10px 0 10px;
-    font-size: 13px;
+    font-size: 1.3em;
     margin: 0 10px 0 10px;
     border-radius: 4px;
 }
@@ -1031,11 +1014,11 @@ div.carre:hover i {
 
 
 div.carre i {
-    font-size: 40px;
+    font-size: 4em;
 }
 
 div.carre a {
-    font-size: 13px;
+    font-size: 1.3em;
     font-weight: 900;
     cursor: pointer;
 }
@@ -1136,7 +1119,7 @@ div.success {
     text-align: center;
     color: rgba(0, 255, 0, 0.5);
     animation: .5s cubic-bezier(.42, -0.48, .64, 1.38) colorsuccess infinite;
-    font-size: 18px;
+    font-size: 1.8em;
 }
 
 @keyframes colorsuccess {
@@ -1155,7 +1138,7 @@ div.failed {
     text-align: center;
     color: rgb(255, 0, 0, 0.5);
     animation: .5s colorfailed infinite;
-    font-size: 18px;
+    font-size: 1.8em;
 }
 
 @keyframes colorfailed {
@@ -1190,7 +1173,7 @@ section.footer {
 }
 
 section.footer p {
-    font-size: 13px;
+    font-size: 1.3em;
 }
 
 div.socialmedia a {
@@ -1198,7 +1181,7 @@ div.socialmedia a {
 }
 
 div.socialmedia i {
-    font-size: 25px;
+    font-size: 2.5em;
     transition: .4s;
     cursor: pointer;
 }
@@ -1216,7 +1199,7 @@ section.footer p {
 
 /*----------------------- FONCTIONNEL ------------------------*/
 i.remonte {
-    font-size: 35px;
+    font-size: 3.5em;
     position: fixed;
     bottom: -100px;
     right: 0;
@@ -1374,7 +1357,7 @@ i.remonte:hover {
     }
 
     .nav-menu a {
-        font-size: 18px;
+        font-size: 1.8em;
         margin: 10px 0
     }
 
@@ -1407,7 +1390,7 @@ i.remonte:hover {
     }
 
     i.remonte {
-        font-size: 20px;
+        font-size: 2em;
         position: fixed;
         bottom: -100px;
         right: 0;
@@ -1432,7 +1415,7 @@ i.remonte:hover {
         background-color: #dddddd;
         border-radius: 5px;
         font-weight: 900;
-        font-size: 15px;
+        font-size: 1.5em;
         padding: 5px 20px;
         box-shadow: 0px 0px 12px 0px rgb(0, 0, 0);
         cursor: pointer;
@@ -1514,19 +1497,19 @@ i.remonte:hover {
     }
 
     div.contenuaccueil h1 {
-        font-size: 25px;
+        font-size: 2.5em;
         margin: 0;
     }
 
     div.contenuaccueil h2 {
-        font-size: 20px;
+        font-size: 2em;
     }
 
     i.slide {
         border: solid 1.5px black;
         border-radius: 50px;
         padding: 10px 2.5px 7.5px 2.5px;
-        font-size: 10px;
+        font-size: 1em;
         margin-top: 0;
         transform: translateY(12.5px);
         animation: 6s translate infinite;
@@ -1703,11 +1686,11 @@ i.remonte:hover {
     }
 
     div.contenuaccueil h1 {
-        font-size: 18px;
+        font-size: 1.8em;
     }
 
     div.contenuaccueil h2 {
-        font-size: 13px;
+        font-size: 1.3em;
     }
 
     div.contenuaccueil span::before {
@@ -1720,7 +1703,7 @@ i.remonte:hover {
     i.slide {
         border: solid 1.5px black;
         padding: 10px 4px 10px 4px;
-        font-size: 7.5px;
+        font-size: 0.75em;
         margin-top: 5px;
         transform: translateY(10px);
         animation: 6s translate infinite;
