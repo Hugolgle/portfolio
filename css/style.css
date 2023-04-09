@@ -771,17 +771,23 @@ button.close-modal i:hover {
 }
 
 /* ------------------------------ STYLE DES MODALS ------------------------------ */
+
+
 div.contenumodal {
-    /* display: grid;
-    grid-template-columns: auto auto;
-    justify-content: space-evenly;
-    align-items: stretch; */
+    height: 80%;
+    overflow: hidden;
 }
 
 div.contenumodal p {
     padding: 20px;
     text-align: justify;
     font-size: 1.5em;
+    height: 500px;
+    overflow: auto;
+}
+
+div.contenumodal p::-webkit-scrollbar {
+    background-color: transparent;
 }
 
 div.contenumodal a {
