@@ -2,7 +2,7 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap'); */
 /* @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap'); */
 /* @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap'); */
-/* @import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
 
 
 /* ---------------------------------------------------------------------------------------------------------------------------------- */
@@ -99,7 +99,7 @@ nav.nav-menu a::after {
 }
 
 nav.nav-menu a:hover {
-    color: #558ABB;
+    color: #bb5555;
 }
 
 nav.nav-menu a:hover::after {
@@ -214,6 +214,14 @@ section.section {
     padding: 20px;
 }
 
+section.section:nth-child(even) {
+    background-color: #ffffff;
+}
+
+section.section:nth-child(odd) {
+    background-color: #dddddd;
+}
+
 section h1.titresection {
     padding: 40px 0 5px 0;
     font-size: 2.5em;
@@ -222,7 +230,7 @@ section h1.titresection {
 section h1.titresection::before {
     content: "";
     position: absolute;
-    background-color: #558ABB;
+    background-color: #bb5555;
     width: 50px;
     height: 5px;
     bottom: 0;
@@ -231,9 +239,6 @@ section h1.titresection::before {
 
 /*----------------------- A PROPOS  ------------------------*/
 
-section.apropos {
-    background: #dddddd
-}
 
 div.apropos {
     display: flex;
@@ -273,7 +278,6 @@ div.txtapropos p {
 /*----------------------- PARCOURS ------------------------*/
 
 section.parcours {
-    background: #ffffff;
     min-height: 150vh;
 
 }
@@ -385,10 +389,6 @@ div.box p {
 
 /*----------------------- SKILLS ------------------------*/
 
-section.skills {
-    background: #dddddd;
-}
-
 div.skills {
     display: flex;
     flex-direction: row;
@@ -432,10 +432,10 @@ div.progressbar {
 }
 
 div.bar {
-    background: #558ABB;
+    background: #bb5555;
     border-radius: 10px;
     height: 1px;
-    box-shadow: 0px 0px 5px 0.5px #558ABB;
+    box-shadow: 0px 0px 5px 0.5px #bb5555;
 }
 
 div.containercv {
@@ -465,10 +465,6 @@ div.containercv button:hover {
 }
 
 /*----------------------- EXPERIENCE PRO ------------------------*/
-
-section.xppro {
-    background: #ffffff;
-}
 
 div.experiencepro {
     display: flex;
@@ -513,10 +509,6 @@ div.boxstage p {
 
 /*----------------------- PROJETS ------------------------*/
 
-section.projets {
-    background: #dddddd;
-}
-
 div.projet {
     display: grid;
     grid-template-columns: auto auto auto;
@@ -537,6 +529,15 @@ div.tritag button {
     font-weight: 500;
     cursor: pointer;
     transition: .4s;
+}
+
+div.tritag button.tout:active,
+div.tritag button.tagsem1:active,
+div.tritag button.tagsem2:active,
+div.tritag button.tagsem3:active,
+div.tritag button.tagsem7:active {
+    background-color: #000000;
+    color: white;
 }
 
 div.tritag button:hover {
@@ -670,7 +671,9 @@ div.modal-container7,
 div.modal-container8,
 div.modal-container9,
 div.modal-container10,
-div.modal-container11 {
+div.modal-container11,
+div.modal-containerstage1,
+div.modal-containerstage2 {
     visibility: hidden;
     /* display: none; */
     position: fixed;
@@ -690,7 +693,9 @@ div.modal-container7.active7,
 div.modal-container8.active8,
 div.modal-container9.active9,
 div.modal-container10.active10,
-div.modal-container11.active11 {
+div.modal-container11.active11,
+div.modal-containerstage1.activestage1,
+div.modal-containerstage2.activestage2 {
     /* display: block; */
     visibility: visible;
 }
@@ -714,7 +719,9 @@ div.modal-container7.active7 .overlay,
 div.modal-container8.active8 .overlay,
 div.modal-container9.active9 .overlay,
 div.modal-container10.active10 .overlay,
-div.modal-container11.active11 .overlay {
+div.modal-container11.active11 .overlay,
+div.modal-containerstage1.activestage1 .overlay,
+div.modal-containerstage2.activestage2 .overlay {
     opacity: 1;
     transition: opacity 0.4s ease-out;
 }
@@ -723,7 +730,7 @@ div.modal {
     opacity: 0;
     width: 45%;
     height: 70%;
-    padding: 30px;
+    padding: 20px;
     background: #ffffff;
     border-radius: 20px;
     position: absolute;
@@ -751,7 +758,9 @@ div.modal-container7.active7 .modal,
 div.modal-container8.active8 .modal,
 div.modal-container9.active9 .modal,
 div.modal-container10.active10 .modal,
-div.modal-container11.active11 .modal {
+div.modal-container11.active11 .modal,
+div.modal-containerstage1.activestage1 .modal,
+div.modal-containerstage2.activestage2 .modal {
     opacity: 1;
     transform: translate(-50%, -50%);
     transition: opacity .4s .2s ease-out, transform .4s .2s ease-out;
@@ -781,20 +790,36 @@ button.close-modal i:hover {
 
 
 div.contenumodal {
-    height: 80%;
+    height: 85%;
     overflow: hidden;
 }
 
-div.contenumodal p {
+div.contenumodal div {
     padding: 20px;
     text-align: justify;
     font-size: 1.5em;
-    height: 500px;
+    height: 85%;
     overflow: auto;
 }
 
-div.contenumodal p::-webkit-scrollbar {
-    background-color: transparent;
+div.contenumodal div h1,
+div.contenumodal div h2,
+div.contenumodal div h3,
+div.contenumodal div h4,
+div.contenumodal div h5,
+div.contenumodal div h6 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+div.contenumodal img {
+    display: flex;
+    text-align: center;
+    margin: 15px auto;
+    border-radius: 5px;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.75);
+    width: 80%;
 }
 
 div.contenumodal a {
@@ -802,10 +827,11 @@ div.contenumodal a {
     font-style: italic;
     font-weight: 600;
     transition: .4s;
+    font-size: .8em;
 }
 
 div.contenumodal a:hover {
-    color: #558ABB;
+    color: #bb5555;
 }
 
 div.imgmodal {
@@ -814,26 +840,6 @@ div.imgmodal {
     height: 18em;
     background-color: #333;
 }
-
-/* ------------------------------ STYLE MODAL 1 ------------------------------ */
-
-
-/* ------------------------------ STYLE MODAL 2 ------------------------------ */
-
-
-/* ------------------------------ STYLE MODAL 3 ------------------------------ */
-
-
-/* ------------------------------ STYLE MODAL 4 ------------------------------ */
-
-
-/* ------------------------------ STYLE MODAL 5 ------------------------------ */
-
-
-/* ------------------------------ STYLE MODAL 6 ------------------------------ */
-
-
-/* ------------------------------ STYLE MODAL 7 ------------------------------ */
 
 /* ---------------------------- */
 
@@ -971,10 +977,6 @@ button.btnresp {
 
 /*----------------------- CONTACT ------------------------*/
 
-section.contact {
-    background: #ffffff;
-}
-
 div.contact {
     display: flex;
     flex-direction: row;
@@ -1011,7 +1013,7 @@ div.carre {
 }
 
 div.carre:hover {
-    background-color: #dddddd;
+    background-color: #bb5555;
 }
 
 div.carre p,
@@ -1175,6 +1177,7 @@ footer {
     align-items: center;
     margin: 0;
     padding: 0;
+    box-shadow: 0px -10px 15px 3px rgba(0, 0, 0, 0.48);
 }
 
 section.footer {
@@ -1218,12 +1221,11 @@ i.remonte {
     right: 0;
     margin: 20px;
     padding: 0;
-    transition: .4s cubic-bezier(.31, -1.23, .47, 2.12);
+    transition: .4s;
     cursor: pointer;
 }
 
 i.remonte:hover {
-    color: #558ABB;
     scale: 1.2;
 }
 
@@ -1265,11 +1267,11 @@ i.remonte:hover {
 
 @media screen and (max-width: 1080px) {
     * {
-        font-family: 'Nunito', sans-serif;
+        /* font-family: 'Nunito', sans-serif; */
         /* font-family: 'Poppins', sans-serif; */
         /* font-family: 'Raleway', sans-serif; */
         /* font-family: 'Ubuntu', sans-serif; */
-        /* font-family: 'PT Sans', sans-serif; */
+        font-family: 'PT Sans', sans-serif;
 
     }
 
@@ -1376,7 +1378,6 @@ i.remonte:hover {
 
     /* ----------------- */
     section.parcours {
-        background: #ffffff;
         min-height: 160vh;
     }
 
@@ -1408,7 +1409,7 @@ i.remonte:hover {
         right: 0;
         margin: 5px;
         padding: 0;
-        transition: .4s cubic-bezier(.31, -1.23, .47, 2.12);
+        transition: .4s;
         cursor: pointer;
     }
 

@@ -205,6 +205,20 @@ function toggleModal11() {
   modalContainer11.classList.toggle("active11");
 }
 
+const modalContainerstage1 = document.querySelector(".modal-containerstage1");
+const modalTriggersstage1 = document.querySelectorAll(".modal-triggerstage1");
+modalTriggersstage1.forEach(triggerstage1 => triggerstage1.addEventListener("click", toggleModalstage1));
+function toggleModalstage1() {
+  modalContainerstage1.classList.toggle("activestage1");
+}
+
+const modalContainerstage2 = document.querySelector(".modal-containerstage2");
+const modalTriggersstage2 = document.querySelectorAll(".modal-triggerstage2");
+modalTriggersstage2.forEach(triggerstage2 => triggerstage2.addEventListener("click", toggleModalstage2));
+function toggleModalstage2() {
+  modalContainerstage2.classList.toggle("activestage2");
+}
+
 
 
 
@@ -289,7 +303,7 @@ buttonsem4.addEventListener('click', () => {
   projet9.style.display = "flex";
 });
 
-
+// ----------------- APPARITION PROJET -------------------------
 
 
 
