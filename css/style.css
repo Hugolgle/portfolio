@@ -256,8 +256,7 @@ div.portrait {
 
 div.txtapropos {
     padding: 25px;
-    width: 477px;
-    height: 155px;
+    width: 45%;
     margin-left: 60px;
     display: flex;
     align-items: center;
@@ -722,7 +721,7 @@ div.modal-container11.active11 .overlay {
 
 div.modal {
     opacity: 0;
-    width: 80%;
+    width: 45%;
     height: 70%;
     padding: 30px;
     background: #ffffff;
@@ -733,6 +732,14 @@ div.modal {
     transform: translate(-50%, calc(-50% - 50px));
     transition: opacity .4s ease-out, transform .4s ease-out;
 }
+
+@media screen and (max-width: 1080px) {
+    div.modal {
+        width: 80%;
+    }
+}
+
+
 
 div.modal-container.active .modal,
 div.modal-container2.active2 .modal,
@@ -1256,7 +1263,7 @@ i.remonte:hover {
 }
 
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1080px) {
     * {
         font-family: 'Nunito', sans-serif;
         /* font-family: 'Poppins', sans-serif; */
@@ -1391,8 +1398,7 @@ i.remonte:hover {
 
     div.txtapropos {
         margin: 0 0 10px 0;
-        width: 250px;
-        height: 281px;
+        width: 80%;
     }
 
     i.remonte {
@@ -1462,7 +1468,7 @@ i.remonte:hover {
 
 }
 
-@media screen and (max-width: 666px) {
+@media screen and (max-width: 800px) {
     * {
         font-family: 'Nunito', sans-serif;
         /* font-family: 'Poppins', sans-serif; */
@@ -1642,7 +1648,7 @@ i.remonte:hover {
 
 
 
-@media screen and (min-width: 666px) and (max-width: 900px) {
+@media screen and (min-width: 800px) and (max-width: 1080px) {
     * {
         font-family: 'Nunito', sans-serif;
         /* font-family: 'Poppins', sans-serif; */
